@@ -1,118 +1,114 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const projects = {
   "iot-water": {
-    title: "IoT Smart Water Resource Management",
-    intro:
-      "An ESP32-based smart agriculture system designed to monitor and manage water resources efficiently.",
-    abstract:
-      "The system uses ESP32 and multiple sensors to monitor soil moisture, water pressure, water level, temperature and humidity. It helps farmers manage irrigation efficiently and reduce unnecessary water consumption.",
+    title: "IoT-Based Smart Water Resource Management Using ESP32",
+
     problem:
-      "Traditional irrigation methods can waste water because irrigation is often performed without knowing the actual soil and water conditions. This project provides a smart monitoring and irrigation solution.",
-    technologies: [
-      "ESP32",
-      "Arduino",
-      "IoT",
-      "Soil Moisture Sensor",
-      "Water Pressure Sensor",
-      "Water Level Sensor",
-      "Temperature Sensor",
-      "Humidity Sensor",
-    ],
+      "Traditional agricultural irrigation often depends on manual monitoring, which can lead to water wastage, over-irrigation, under-irrigation, and unnecessary motor operation. A smart system is needed to monitor water and soil conditions and manage irrigation automatically.",
+
+    abstract:
+      "This project presents an IoT-based smart water management system designed for agriculture. The system uses ESP32 along with sensors to monitor soil moisture, water pressure, water level, temperature, and humidity. Based on the collected data, the irrigation motor can be controlled according to predefined conditions. The system helps reduce water wastage, minimize manual monitoring, and improve irrigation efficiency.",
+
+    technologies:
+      "ESP32, IoT, Sensors, Embedded C/C++, Arduino IDE, Relay",
+
     features: [
-      "Real-time soil moisture monitoring",
-      "Water pressure monitoring",
+      "Soil moisture monitoring",
       "Water level monitoring",
+      "Water pressure monitoring",
       "Automatic irrigation control",
       "Temperature and humidity monitoring",
-      "Alert system",
-      "ESP32-based IoT architecture",
+      "Abnormal condition alerts",
+      "IoT-based monitoring"
     ],
-    outcome:
-      "The system provides efficient agricultural water management and helps reduce unnecessary water usage.",
-  },
+
+    result:
+  "The system demonstrates real-time monitoring and automated irrigation control using ESP32 and connected sensors. It helps reduce manual monitoring and supports efficient water management.",
+
+futureScope:
+  "The system can be extended with cloud dashboards, mobile notifications, weather-based irrigation, data analytics, and AI-based water usage prediction."
+    },
 
   "few-shot": {
     title: "Few-Shot Learning for New Product Defect Classes",
-    intro:
-      "An AI/ML project designed to identify new product defect classes using few-shot learning techniques.",
-    abstract:
-      "This project explores few-shot learning for product defect detection. The system uses pretrained deep learning models to extract useful image features and classify new defect categories using a small number of training examples.",
+
     problem:
-      "Traditional machine learning models often require large datasets for every defect category. In real-world manufacturing, collecting large datasets for new defects can be difficult and time-consuming.",
-    technologies: [
-      "Python",
-      "PyTorch",
-      "ResNet18",
-      "Deep Learning",
-      "Machine Learning",
-      "Computer Vision",
-    ],
+      "Manufacturing industries generally require large amounts of labeled images to train AI models for product defect detection. However, new defect types may have only a few available examples. A system is needed to identify new defect categories using limited training data.",
+
+    abstract:
+      "This project focuses on using Few-Shot Learning to identify new product defect categories when only a small number of training images are available. A deep learning model is used as a feature extractor to learn useful visual representations from product images. The extracted features are then used to compare and classify new defect classes.",
+
+    technologies:
+      "Python, PyTorch, ResNet18, Deep Learning, Few-Shot Learning, Computer Vision",
+
     features: [
-      "Few-shot defect classification",
-      "Pretrained ResNet feature extraction",
       "Image-based defect detection",
-      "Support for new defect classes",
-      "Reduced training data requirement",
+      "Few-shot classification",
+      "Deep learning feature extraction",
+      "Limited-data learning",
+      "Computer vision processing"
     ],
-    outcome:
-      "The project demonstrates how few-shot learning can help detect new product defect categories with limited training examples.",
-  },
+
+    result:
+  "The project demonstrates how deep learning feature extraction and Few-Shot Learning can be used to classify new product defect categories with limited training examples.",
+
+futureScope:
+  "The system can be extended with larger industrial datasets, advanced few-shot learning algorithms, real-time defect detection, and automated quality inspection."},
 
   "online-book-store": {
     title: "Online Book Store",
-    intro:
-      "A web application for browsing books and creating a simple online shopping experience.",
-    abstract:
-      "The Online Book Store provides users with an easy-to-use interface for viewing books, checking information and managing book selections.",
+
     problem:
-      "Traditional book purchasing requires customers to visit physical stores. An online platform can make book browsing and purchasing more convenient.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Java",
-      "Spring Boot",
-      "MySQL",
-    ],
+      "Traditional book purchasing requires users to physically visit stores and manually search for available books. A web-based platform is needed to provide users with an easy and organized way to browse and manage books online.",
+
+    abstract:
+      "The Online Book Store is a full-stack web application developed to provide users with a simple platform for browsing and managing books online. The application demonstrates the integration of frontend and backend technologies along with REST APIs and database management.",
+
+    technologies:
+      "HTML, CSS, JavaScript, React, Java, Spring Boot, REST API, MySQL",
+
     features: [
       "Book browsing",
       "Book information display",
-      "Search functionality",
-      "User-friendly interface",
-      "Online shopping experience",
+      "Responsive user interface",
+      "Backend REST APIs",
       "Database integration",
+      "Full-stack architecture"
     ],
-    outcome:
-      "The project provides a simple digital platform for browsing and managing books online.",
-  },
+
+    result:
+  "The project demonstrates a complete full-stack application with frontend, backend, REST API, and database integration for managing book-related information.",
+
+futureScope:
+  "The application can be extended with user authentication, online payments, shopping cart functionality, order tracking, reviews, recommendations, and an admin dashboard."},
+
 
   "weather-app": {
-    title: "Weather App",
-    intro:
-      "A responsive web application that displays weather information using a weather API.",
-    abstract:
-      "The Weather App allows users to search for a location and view current weather information through a simple and responsive interface.",
+    title: "Weather Application",
+
     problem:
-      "Users need quick and accessible weather information when planning their daily activities. This application provides weather information through a simple web interface.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Weather API",
-      "REST API",
-    ],
+      "Users need a simple and convenient way to access current weather information for different locations. A responsive application is needed to retrieve weather data and present it clearly to users.",
+
+    abstract:
+      "The Weather Application is a web-based application that provides weather information for a selected location. The application retrieves weather data through an API and displays important information such as temperature and weather conditions through an easy-to-use interface.",
+
+    technologies:
+      "HTML, CSS, JavaScript, React, Weather API, REST API",
+
     features: [
       "Location-based weather search",
+      "Weather API integration",
       "Temperature display",
       "Weather condition display",
-      "Responsive design",
-      "API integration",
-      "Simple user interface",
+      "Responsive user interface"
     ],
-    outcome:
-      "The application provides users with quick access to weather information through a responsive web interface.",
-  },
+
+    result:
+  "The application successfully demonstrates API integration and dynamic display of weather information through a responsive React interface.",
+
+futureScope:
+  "The application can be extended with weather forecasts, interactive maps, location detection, weather alerts, historical weather data, and multiple location tracking." }
 };
 
 function ProjectDetails() {
@@ -122,79 +118,65 @@ function ProjectDetails() {
 
   if (!project) {
     return (
-      <div className="project-page">
-        <h1>Project Not Found</h1>
+      <div className="project-details">
+        <h2>Project Not Found</h2>
 
-        <Link to="/" className="back-btn">
-          ← Back to Portfolio
+        <Link to="/" className="project-btn">
+          Back to Home
         </Link>
       </div>
     );
   }
 
   return (
-    <div className="project-page">
+    <div className="project-details">
 
-      <div className="project-page-header">
+      <Link to="/#projects" className="back-btn">
+        ← Back to Projects
+      </Link>
 
-        <Link to="/" className="back-btn">
-          ← Back to Portfolio
-        </Link>
+      <h1>{project.title}</h1>
 
-        <p className="details-label">PROJECT DETAILS</p>
-
-        <h1>{project.title}</h1>
-
-        <p className="project-page-intro">
-          {project.intro}
-        </p>
-
+      <div className="detail-box">
+        <h2>Problem Statement</h2>
+        <p>{project.problem}</p>
       </div>
 
-      <div className="project-page-content">
-
-        <section>
-          <h2>Abstract</h2>
-          <p>{project.abstract}</p>
-        </section>
-
-        <section>
-          <h2>Problem Statement</h2>
-          <p>{project.problem}</p>
-        </section>
-
-        <section>
-          <h2>Technologies Used</h2>
-
-          <div className="details-tech">
-            {project.technologies.map((technology, index) => (
-              <span key={index}>{technology}</span>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <h2>Key Features</h2>
-
-          <ul className="feature-list">
-            {project.features.map((feature, index) => (
-              <li key={index}>{feature}</li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
-          <h2>Project Outcome</h2>
-          <p>{project.outcome}</p>
-        </section>
-
-        <section className="project-links">
-          <Link to="/" className="btn secondary">
-            ← Back to Projects
-          </Link>
-        </section>
-
+      <div className="detail-box">
+        <h2>Abstract</h2>
+        <p>{project.abstract}</p>
       </div>
+
+      <div className="detail-box">
+        <h2>Technologies Used</h2>
+        <p>{project.technologies}</p>
+      </div>
+
+      <div className="detail-box">
+        <h2>Key Features</h2>
+
+        <ul>
+          {project.features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="detail-box">
+        <h2>How It Works</h2>
+        <p>{project.working}</p>
+      </div>
+      
+      <div className="detail-box">
+  <h2>Results / Outcome</h2>
+  <p>{project.result}</p>
+</div>
+
+<div className="detail-box">
+  <h2>Future Scope</h2>
+  <p>{project.futureScope}</p>
+</div>
+
     </div>
   );
 }
