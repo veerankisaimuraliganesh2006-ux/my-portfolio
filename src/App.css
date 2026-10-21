@@ -26,7 +26,7 @@ body {
 }
 
 .dark-mode {
-  background: #0b0f19;
+  background: #33032e;
   color: #ffffff;
 }
 
@@ -48,12 +48,12 @@ body {
   left: 0;
   z-index: 1000;
 
-  background: rgba(11, 15, 25, 0.96);
+  background: rgba(65, 3, 32, 0.96);
   backdrop-filter: blur(10px);
 }
 
 .logo {
-  color: #00d9ff;
+  color: #e40f16;
   font-size: 25px;
   margin: 0;
   flex-shrink: 0;
@@ -76,7 +76,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #00d9ff;
+  color: #510731;
 }
 
 
@@ -92,11 +92,11 @@ body {
   padding: 0;
   margin-left: 2px;
 
-  border: 1px solid #00d9ff;
+  border: 1px solid #47093b;
   border-radius: 50%;
 
   background: transparent;
-  color: #00d9ff;
+  color: #480844;
 
   display: flex;
   align-items: center;
@@ -109,7 +109,7 @@ body {
 }
 
 .theme-toggle:hover {
-  background: #00d9ff;
+  background: #7a0a55;
   color: #07111f;
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 .hello {
-  color: #00d9ff;
+  color: #ecc7d8;
   letter-spacing: 3px;
   margin-bottom: 15px;
 }
@@ -144,7 +144,7 @@ body {
 }
 
 .hero h1 span {
-  color: #00d9ff;
+  color: #e1dcde;
 }
 
 .hero h2 {

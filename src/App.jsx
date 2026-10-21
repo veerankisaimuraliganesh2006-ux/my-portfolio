@@ -4,10 +4,23 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ProjectDetails from "./pages/ProjectDetails";
 import CertificateDetails from "./pages/CertificateDetails";
 import InternshipDetails from "./pages/InternshipDetails";
+import VisitorGate from "./VisitorGate";
 
 
 function Home() {
   const [darkMode, setDarkMode] = useState(true);
+
+  const [visitorRegistered, setVisitorRegistered] = useState(
+    () => sessionStorage.getItem("visitorRegistered") === "true"
+  );
+
+  if (!visitorRegistered) {
+    return (
+      <VisitorGate
+        onSuccess={() => setVisitorRegistered(true)}
+      />
+    );
+  }
 
   return (
     <div className={darkMode ? "app dark-mode" : "app light-mode"}>
